@@ -15,7 +15,7 @@ extension UIColor {
         }
     }
 
-    static func interpolate(from: UIColor, to: UIColor, with fraction: CGFloat) -> UIColor {
+    public static func interpolate(from: UIColor, to: UIColor, with fraction: CGFloat) -> UIColor {
         let f = min(1, max(0, fraction))
         let c1 = from.components()
         let c2 = to.components()
